@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+<!--  <base href="/">-->
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="google-site-verification" content="Fp0jCLFiQNYSZztQRjLW4qPP-fLQW_Zbosr7dzSjzI8" />
+  <meta name="description" content="- عرضه کننده لوازم الکتریکی , رنگ, ابزارآلات, انواع چسب ...
+ - مرکز پخش انواع مدل های کنترل
+ < سامسونگ , سونی , توشیبا , استارست , الجی , پاناسونیک >
+به صورت عمده و تکی ال سی دی - ال ای دی...
+تلویزیون های عادی دی وی دی , دیجیتال و غیره...
+< ارسال به تمام نقاط جزیره قشم >">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="control">
+  <link rel="apple-touch-icon" href="icons/tools.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="tools.png"/>
+
+  <title>الکتریکی عبدالله | ابزارآلات و کنترل | قشم - روستای کاروان</title>
+  <link rel="manifest" href="manifest.json">
+
+
+
+
+
+  <style>
+
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    section
+    {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #042104;
+      animation: animateBg 10s linear infinite;
+    }
+
+    @keyframes animateBg
+    {
+        0%
+        {
+            filter: hue-rotate(0deg);
+        }
+        100%
+        {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+    section .loader
+    {
+      position: relative;
+      width: 120px;
+      height: 120px;
+
+    }
+    section .loader span
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width:100%;
+      height: 100%;
+      transform: rotate(calc(18deg * var(--i)));
+
+    }
+    section .loader span::before
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #00ff0a;
+        box-shadow: 0 0 10px #00ff0a,
+                    0 0 20px #00ff0a,
+                    0 0 40px #00ff0a,
+                    0 0 60px #00ff0a,
+                    0 0 80px #00ff0a,
+                    0 0 100px #00ff0a;
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+    }
+    @keyframes animate
+    {
+        0%
+        {
+            transform: scale(1);
+        }
+
+         80%,100%
+        {
+            transform: scale(0);
+        }
+
+    }
+
+  </style>
+
+<!--  <style>-->
+<!--    .lds-roller {-->
+<!--      display: inline-block;-->
+<!--      position: relative;-->
+<!--      width: 80px;-->
+<!--      height: 80px;-->
+<!--      position: fixed; /* or absolute */-->
+<!--      top: 50%;-->
+<!--      left: 50%;-->
+<!--    }-->
+<!--    .lds-roller div {-->
+<!--      animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;-->
+<!--      transform-origin: 40px 40px;-->
+<!--    }-->
+<!--    .lds-roller div:after {-->
+<!--      content: " ";-->
+<!--      display: block;-->
+<!--      position: absolute;-->
+<!--      width: 7px;-->
+<!--      height: 7px;-->
+<!--      border-radius: 50%;-->
+<!--      background: #0072ff;-->
+<!--      margin: -4px 0 0 -4px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(1) {-->
+<!--      animation-delay: -0.036s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(1):after {-->
+<!--      top: 63px;-->
+<!--      left: 63px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(2) {-->
+<!--      animation-delay: -0.072s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(2):after {-->
+<!--      top: 68px;-->
+<!--      left: 56px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(3) {-->
+<!--      animation-delay: -0.108s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(3):after {-->
+<!--      top: 71px;-->
+<!--      left: 48px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(4) {-->
+<!--      animation-delay: -0.144s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(4):after {-->
+<!--      top: 72px;-->
+<!--      left: 40px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(5) {-->
+<!--      animation-delay: -0.18s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(5):after {-->
+<!--      top: 71px;-->
+<!--      left: 32px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(6) {-->
+<!--      animation-delay: -0.216s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(6):after {-->
+<!--      top: 68px;-->
+<!--      left: 24px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(7) {-->
+<!--      animation-delay: -0.252s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(7):after {-->
+<!--      top: 63px;-->
+<!--      left: 17px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(8) {-->
+<!--      animation-delay: -0.288s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(8):after {-->
+<!--      top: 56px;-->
+<!--      left: 12px;-->
+<!--    }-->
+<!--    @keyframes lds-roller {-->
+<!--      0% {-->
+<!--        transform: rotate(0deg);-->
+<!--      }-->
+<!--      100% {-->
+<!--        transform: rotate(360deg);-->
+<!--      }-->
+<!--    }-->
+<!--  </style>-->
+
+</head>
+<body>
+
+
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+
+  <section>
+    <div class="loader">
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+      <span style="--i:4;"></span>
+      <span style="--i:5;"></span>
+      <span style="--i:6;"></span>
+      <span style="--i:7;"></span>
+      <span style="--i:8;"></span>
+      <span style="--i:9;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:17;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+    </div>
+  </section>
+
+<!--  <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>-->
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
