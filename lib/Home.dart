@@ -407,7 +407,7 @@ class _HomeState extends State<Home> {
                               },
                               child: Container(
                                   padding: EdgeInsets.symmetric(horizontal: 5),
-                                  margin: EdgeInsets.symmetric(vertical: 5),
+                                  margin: EdgeInsets.symmetric(vertical: 4),
                                   decoration: BoxDecoration(
                                       color: Colors.grey[900],
                                       borderRadius: BorderRadius.circular(11)),
