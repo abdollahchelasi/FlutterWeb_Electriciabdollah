@@ -350,8 +350,7 @@ class _HomeState extends State<Home> {
 
                       InkWell(
                         onTap: () {
-                          launch(
-                              'http://electriciabdollah.ir/apk/%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%DB%8C%DA%A9%DB%8C%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87.apk');
+                          launch('http://electriciabdollah.ir/apk/electrici.apk');
                         },
                         child: Container(
                           width: 144,
